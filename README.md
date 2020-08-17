@@ -1,46 +1,48 @@
 # OBS-HLSL-for-ZOOM-meeting
 screen effect shader for video meeting
 
-## OBS‚ÅƒVƒF[ƒ_[‚ğ•`‚¢‚ÄAzoomƒ~[ƒeƒBƒ“ƒO‚ğƒVƒF[ƒ_[ƒ‰ƒCƒuƒR[ƒfƒBƒ“ƒOŠÂ‹«‚É‚µ‚æ‚¤I  
+## OBSã§ã‚·ã‚§ãƒ¼ãƒ€ãƒ¼ã‚’æã„ã¦ã€zoomãƒŸãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã‚’ã‚·ã‚§ãƒ¼ãƒ€ãƒ¼ãƒ©ã‚¤ãƒ–ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ç’°å¢ƒã«ã—ã‚ˆã†ï¼  
 ![OBS zoom shader](https://raw.githubusercontent.com/sayachang/OBS-HLSL-for-ZOOM-meeting/develop/images/obs-zoom-3x3-shader.png "OBS zoom shader")
 
-uƒŠƒ‚[ƒgƒ[ƒN‚Å–ˆ“úzoom‚ğg‚Á‚Ä‘Å‚¿‡‚í‚¹‚ğ‚µ‚Ä‚¢‚é‚¯‚ÇA‚©‚í‚è‚Î‚¦‚Ì‚µ‚È‚¢ƒrƒfƒI‰æ–Ê‚É‚à‚¤‚¤‚ñ‚´‚èIv
+ã€Œãƒªãƒ¢ãƒ¼ãƒˆãƒ¯ãƒ¼ã‚¯ã§æ¯æ—¥zoomã‚’ä½¿ã£ã¦æ‰“ã¡åˆã‚ã›ã‚’ã—ã¦ã„ã‚‹ã‘ã©ã€ã‹ã‚ã‚Šã°ãˆã®ã—ãªã„ãƒ“ãƒ‡ã‚ªç”»é¢ã«ã‚‚ã†ã†ã‚“ã–ã‚Šï¼ã€
 
-‚»‚ñ‚È•—‚ÉŠ´‚¶‚Ä‚¢‚Ü‚¹‚ñ‚©HI
+ãã‚“ãªé¢¨ã«æ„Ÿã˜ã¦ã„ã¾ã›ã‚“ã‹ï¼Ÿï¼
 
-‚º‚ĞOBS‚ÅŠÈ’P‚ÈƒVƒF[ƒ_[‚ğ•`‚¢‚ÄA‚¿‚å‚Á‚Æ‚µ‚½ƒGƒtƒFƒNƒg‚Å‘Å‚¿‡‚í‚¹‘Šè‚ğ‚Ñ‚Á‚­‚è‚³‚¹‚Ä‚İ‚Ü‚µ‚å‚¤I
+ãœã²OBSã§ç°¡å˜ãªã‚·ã‚§ãƒ¼ãƒ€ãƒ¼ã‚’æã„ã¦ã€ã¡ã‚‡ã£ã¨ã—ãŸã‚¨ãƒ•ã‚§ã‚¯ãƒˆã§æ‰“ã¡åˆã‚ã›ç›¸æ‰‹ã‚’ã³ã£ãã‚Šã•ã›ã¦ã¿ã¾ã—ã‚‡ã†ï¼
 
-‚â‚è•û‚Í‚Ş‚¸‚©‚µ‚­‚Í‚ ‚è‚Ü‚¹‚ñIˆÈ‰º‚Ìè‡‚ÅƒCƒ“ƒXƒg[ƒ‹‚µA‚±‚ÌƒŠƒ|ƒWƒgƒŠ‚ÌƒVƒF[ƒ_[‚ğƒ_ƒEƒ“ƒ[ƒh‚µ‚Ä“K—p‚µ‚Ä‚İ‚Ü‚µ‚å‚¤I
+ã‚„ã‚Šæ–¹ã¯ã‚€ãšã‹ã—ãã¯ã‚ã‚Šã¾ã›ã‚“ï¼ä»¥ä¸‹ã®æ‰‹é †ã§ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã€ã“ã®ãƒªãƒã‚¸ãƒˆãƒªã®ã‚·ã‚§ãƒ¼ãƒ€ãƒ¼ã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã¦é©ç”¨ã—ã¦ã¿ã¾ã—ã‚‡ã†ï¼
 
-## “±“ü  
-1. ‚à‚µ‚Ü‚¾‚È‚ç[zoom](https://zoom.us/jp-jp/meetings.html)‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚Ü‚·  
-1. [OBS](https://obsproject.com/ja/download)‚ğƒCƒ“ƒXƒg[ƒ‹‚µ‚Ü‚·  
-1. ƒo[ƒ`ƒƒƒ‹ƒJƒƒ‰‚ğg‚¤‚½‚ß‚É[VirtualCamƒvƒ‰ƒOƒCƒ“](https://obsproject.com/forum/resources/obs-virtualcam.539/)‚ğ’Ç‰Á‚µ‚Ü‚·  
-1. ƒVƒF[ƒ_[‚ğg‚¤‚½‚ß‚É[Shaderfilterƒvƒ‰ƒOƒCƒ“](https://obsproject.com/forum/resources/obs-shaderfilter-v1-0-update.775/)‚à’Ç‰Á‚µ‚Ü‚·  
+## å°å…¥  
+1. ã‚‚ã—ã¾ã ãªã‚‰[zoom](https://zoom.us/jp-jp/meetings.html)ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™  
+2. [OBS](https://obsproject.com/ja/download)ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¾ã™  
+3. ãƒãƒ¼ãƒãƒ£ãƒ«ã‚«ãƒ¡ãƒ©ã‚’ä½¿ã†ãŸã‚ã«[VirtualCamãƒ—ãƒ©ã‚°ã‚¤ãƒ³](https://obsproject.com/forum/resources/obs-virtualcam.539/)ã‚’è¿½åŠ ã—ã¾ã™  
+4. ã‚·ã‚§ãƒ¼ãƒ€ãƒ¼ã‚’ä½¿ã†ãŸã‚ã«[Shaderfilterãƒ—ãƒ©ã‚°ã‚¤ãƒ³](https://obsproject.com/forum/resources/obs-shaderfilter-v1-0-update.775/)ã‚‚è¿½åŠ ã—ã¾ã™  
 
-OBS Studio‚ÌƒCƒ“ƒXƒg[ƒ‹ƒtƒHƒ‹ƒ_‚ÉƒRƒs[‚·‚ê‚ÎOK
+OBS Studioã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãƒ•ã‚©ãƒ«ãƒ€ã«ã‚³ãƒ”ãƒ¼ã™ã‚Œã°OK
 
-WindowsŠÂ‹«‚ÅƒfƒtƒHƒ‹ƒg‚ÌƒpƒX‚É“ü‚ê‚½ê‡AˆÈ‰º‚Ì‚æ‚¤‚É‚È‚è‚Ü‚·
+Windowsç’°å¢ƒã§ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ãƒ‘ã‚¹ã«å…¥ã‚ŒãŸå ´åˆã€ä»¥ä¸‹ã®ã‚ˆã†ã«ãªã‚Šã¾ã™
 
 C:\Program Files\obs-studio\data\obs-plugins\obs-shaderfilter\examples
 
-1. OBS‚ğ‹N“®‚µ‚ÄƒZƒbƒgƒAƒbƒv‚µ‚Ü‚·  
+5. OBSã‚’èµ·å‹•ã—ã¦ã‚»ãƒƒãƒˆã‚¢ãƒƒãƒ—ã—ã¾ã™  
 
 ![boot OBS](https://raw.githubusercontent.com/sayachang/OBS-HLSL-for-ZOOM-meeting/develop/images/boot-obs.png "boot OBS")
 
-ƒ\[ƒX‚Ì‚Æ‚±‚ë‚ÉŠO•t‚¯‚ÌƒJƒƒ‰‚âAƒm[ƒgPC‘g‚İ‚İ‚ÌƒJƒƒ‰‚ğw’è‚µ‚Ü‚·
+ã‚½ãƒ¼ã‚¹ã®ã¨ã“ã‚ã«å¤–ä»˜ã‘ã®ã‚«ãƒ¡ãƒ©ã‚„ã€ãƒãƒ¼ãƒˆPCçµ„ã¿è¾¼ã¿ã®ã‚«ãƒ¡ãƒ©ã‚’æŒ‡å®šã—ã¾ã™
 
-ƒc[ƒ‹->VirtualCam‚ÅStart‚ğƒNƒŠƒbƒN‚·‚é‚Æ‰f‘œ‚ªo‚é‚æ‚¤‚É‚È‚è‚Ü‚·
+ãƒ„ãƒ¼ãƒ«->VirtualCamã§Startã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨æ˜ åƒãŒå‡ºã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™
 
 ![tool virtual cam](https://raw.githubusercontent.com/sayachang/OBS-HLSL-for-ZOOM-meeting/develop/images/tool-virtual-cam.png "tool virtual cam")
 
-1. zoom‚Ìİ’è‚ÅAƒrƒfƒI->ƒJƒƒ‰‚©‚çOBS‚ÌVirtualCam‚ğw’è‚µ‚Ü‚·  
+6. zoomã®è¨­å®šã§ã€ãƒ“ãƒ‡ã‚ª->ã‚«ãƒ¡ãƒ©ã‹ã‚‰OBSã®VirtualCamã‚’æŒ‡å®šã—ã¾ã™  
 
 ![zoom config](https://raw.githubusercontent.com/sayachang/OBS-HLSL-for-ZOOM-meeting/develop/images/zoom-configure.png "zoom config")
 
-ƒ\[ƒX‚ÌƒJƒƒ‰‰EƒNƒŠƒbƒN‚©‚çƒtƒBƒ‹ƒ^‚ğƒNƒŠƒbƒN‚·‚é‚ÆƒVƒF[ƒ_[‚ğ‘I‘ğ‚Å‚«‚Ü‚·
+ã‚½ãƒ¼ã‚¹ã®ã‚«ãƒ¡ãƒ©å³ã‚¯ãƒªãƒƒã‚¯ã‹ã‚‰ãƒ•ã‚£ãƒ«ã‚¿ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹ã¨ã‚·ã‚§ãƒ¼ãƒ€ãƒ¼ã‚’é¸æŠã§ãã¾ã™
 
 ![apply shader](https://raw.githubusercontent.com/sayachang/OBS-HLSL-for-ZOOM-meeting/develop/images/apply-shader.png "apply shader")
 
-User-defined shader‚©‚çLoad shader text from file‚Ìƒ`ƒFƒbƒN‚ğ“ü‚êAQÆƒ{ƒ^ƒ“‚©‚çƒVƒF[ƒ_[ƒtƒ@ƒCƒ‹‚ğ‘I‚Ô‚ÆƒGƒtƒFƒNƒg‚ğ’Ç‰Á‚Å‚«‚Ü‚·
+User-defined shaderã‹ã‚‰Load shader text from fileã®ãƒã‚§ãƒƒã‚¯ã‚’å…¥ã‚Œã€å‚ç…§ãƒœã‚¿ãƒ³ã‹ã‚‰ã‚·ã‚§ãƒ¼ãƒ€ãƒ¼ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é¸ã¶ã¨ã‚¨ãƒ•ã‚§ã‚¯ãƒˆã‚’è¿½åŠ ã§ãã¾ã™
+
+ã“ã®ãƒªãƒã‚¸ãƒˆãƒªã®videx3x3.shaderã‚’é©ç”¨ã™ã‚Œã°ã€ä¸€ç•ªä¸Šã«ã‚ã‚‹ç”»åƒã®ã‚ˆã†ãªæ˜ åƒã«ãªã‚Šã¾ã™ã€‚
 
