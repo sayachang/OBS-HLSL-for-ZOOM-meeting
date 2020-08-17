@@ -44,5 +44,5 @@ C:\Program Files\obs-studio\data\obs-plugins\obs-shaderfilter\examples
 
 User-defined shaderからLoad shader text from fileのチェックを入れ、参照ボタンからシェーダーファイルを選ぶとエフェクトを追加できます
 
-このリポジトリのvidex3x3.shaderを適用すれば、一番上にある画像のような映像になります。
+このリポジトリのvideo3x3.shaderを適用すれば、一番上にある画像のような映像になります。
 
