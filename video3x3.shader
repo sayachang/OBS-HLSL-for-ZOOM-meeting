@@ -1,13 +1,17 @@
 uniform string notes = "video3x3";
+uniform int div = 3;
 
 float n(float i){return frac(sin(i)*543.65+290.4);}
 float4 mainImage(VertData v_in) : TARGET
 {
 	float time = elapsed_time;
 	float2 uv = v_in.uv;
-	uv *= 3.;
-	float2 index2 = float2(step(v_in.uv.x,1./3.),step(v_in.uv.y,1./3.));
-	index2+=float2(step(v_in.uv.x,2./3.),step(v_in.uv.y,2./3.));
+	float dv = (float)div;
+	
+	uv *= dv;
+	float2 index2 = float2(step(v_in.uv.x,1./dv),step(v_in.uv.y,1./dv));
+	index2+=float2(step(v_in.uv.x,2./dv),step(v_in.uv.y,2./dv));
+	
 	float index = (2.*index2.x+3.*index2.y);
 	float nindex=n(index);
 	
