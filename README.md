@@ -46,3 +46,9 @@ User-defined shaderからLoad shader text from fileのチェックを入れ、�
 
 このリポジトリのvideo3x3.shaderを適用すれば、一番上にある画像のような映像になります。
 
+画像を加工するシェーダーであれば、お気に入りのものを書き換えてOBS用のshaderファイルを用意し、ビデオミーティングで使うことができます。
+
+これは例えば、KinoGlitchをOBSから使い、zoomミーティングで表示した例です。
+
+[Kino Glitch on Zoom Meeting](https://scrapbox.io/sayachang/Kino_Glitch_on_Zoom_Meeting)
+
